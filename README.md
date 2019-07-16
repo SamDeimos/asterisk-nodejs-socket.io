@@ -17,7 +17,7 @@ npm start
 ## Ejecución
 En la ejecucion puede ingresar a **https://MI_HOST:2311** y podra ver en la consola información de la llamada entrante que se origina con el evento ***newchannel***.
 
-### Información extra 📌
+## Información extra 📌
 • Por default el servidor corre en el puerto **2311** para modificarlo puedes modificar
 ```
 const port
@@ -33,7 +33,7 @@ const port
     </script>
 ```
 
-### Creación de certificados SSL
+## Creación de certificados SSL
 * Ubicarse en la carpeta **ssl** y ejecutar los siguientes comando para la creación de los certificados
 ```
 openssl genrsa -des3 -out miSSL.pem 2048
@@ -47,6 +47,6 @@ openssl x509 -req -days 365 -in miSSL.csr -signkey miSSL.pem -out miSSL.crt
 ```
 openssl rsa -in miSSL.pem -out miSSL.key
 ```
-### Construido con 🛠️
+## Construido con 🛠️
 * [Asterisk-Manager](https://github.com/pipobscure/NodeJS-AsteriskManager)
 * [Socket.io](https://github.com/socketio/socket.io)
