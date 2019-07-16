@@ -47,3 +47,6 @@ openssl x509 -req -days 365 -in miSSL.csr -signkey miSSL.pem -out miSSL.crt
 ```
 openssl rsa -in miSSL.pem -out miSSL.key
 ```
+### Construido con
+• [Asterisk-Manager](https://github.com/pipobscure/NodeJS-AsteriskManager)
+• [Socket.io](https://github.com/socketio/socket.io)
