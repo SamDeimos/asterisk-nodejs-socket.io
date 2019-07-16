@@ -32,3 +32,18 @@ const port
         });
     </script>
 ```
+
+### Creación de certificados SSL
+* Ubicarse en la carpeta **ssl** y ejecutar los siguientes comando para la creación de los certificados
+```
+openssl genrsa -des3 -out miSSL.pem 2048
+```
+```
+openssl req -new -key miSSL.pem -out miSSL.csr
+```
+```
+openssl x509 -req -days 365 -in miSSL.csr -signkey miSSL.pem -out miSSL.crt
+```
+```
+openssl rsa -in miSSL.pem -out miSSL.key
+```
